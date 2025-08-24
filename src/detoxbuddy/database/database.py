@@ -10,7 +10,7 @@ from sqlalchemy.orm import sessionmaker, Session
 from sqlalchemy.pool import StaticPool
 from typing import Generator
 
-from detoxbuddy.core.config import settings
+from detoxbuddy.core.config_simple import settings
 from .models import Base
 
 # Создание движка базы данных

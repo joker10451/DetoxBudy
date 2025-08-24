@@ -18,7 +18,7 @@ from detoxbuddy.database.database import SessionLocal
 from detoxbuddy.database.models.reminder import Reminder, ReminderStatus, ReminderType
 from detoxbuddy.database.models.user import User
 from detoxbuddy.telegram.bot.telegram_bot import TelegramBot
-from detoxbuddy.core.config import settings
+from detoxbuddy.core.config_simple import settings
 
 logger = logging.getLogger(__name__)
 

@@ -23,7 +23,7 @@ from sqlalchemy.orm import Session
 from detoxbuddy.database.database import SessionLocal, engine
 from detoxbuddy.database.crud.reminder import reminder_crud
 from detoxbuddy.database.models.reminder import Reminder, ReminderStatus, ReminderType
-from detoxbuddy.core.config import settings
+from detoxbuddy.core.config_simple import settings
 
 logger = logging.getLogger(__name__)
 

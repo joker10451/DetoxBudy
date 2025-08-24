@@ -18,7 +18,7 @@ from telegram.ext import (
 )
 import structlog
 
-from detoxbuddy.core.config import settings, constants
+from detoxbuddy.core.config_simple import settings, constants
 from detoxbuddy.core.services.user_service import user_service
 from detoxbuddy.database.models.user import User
 from detoxbuddy.database.models.achievement import Achievement, UserAchievement, UserLevel, AchievementType
