@@ -1,0 +1,22 @@
+# Основные зависимости для DetoxBuddy (Production)
+# Telegram Bot
+python-telegram-bot==20.7
+
+# База данных
+sqlalchemy==2.0.27
+alembic==1.13.1
+psycopg2-binary==2.9.9
+
+# Планировщик задач
+apscheduler==3.10.4
+
+# Конфигурация и переменные окружения
+python-dotenv==1.0.1
+pydantic==2.6.1
+pydantic-settings==2.2.1
+
+# Логирование
+structlog==24.1.0
+
+# Дополнительные утилиты
+aiofiles==23.2.1

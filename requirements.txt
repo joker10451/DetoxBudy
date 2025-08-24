@@ -15,8 +15,8 @@ celery==5.3.4
 apscheduler==3.10.4
 
 # Обработка изображений и аналитика
-pillow==10.2.0
-opencv-python==4.9.0.80
+pillow>=10.0.0
+opencv-python-headless==4.9.0.80
 pandas==2.2.0
 numpy==1.26.4
 matplotlib==3.8.3
