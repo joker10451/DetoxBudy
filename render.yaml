@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: detoxbuddy-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    healthCheckPath: /api/v1/health/
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: detoxbuddy-db
+          property: connectionString
+
+databases:
+  - name: detoxbuddy-db
+    databaseName: detoxbuddy
+    user: detoxbuddy
