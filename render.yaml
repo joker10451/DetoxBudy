@@ -3,7 +3,7 @@ services:
     name: detoxbuddy-bot
     env: python
     plan: free
-    buildCommand: pip install -r requirements-prod.txt
+    buildCommand: pip install -r requirements-minimal.txt
     startCommand: python main.py
     healthCheckPath: /api/v1/health/
     envVars:

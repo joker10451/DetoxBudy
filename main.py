@@ -14,7 +14,7 @@ from pathlib import Path
 # Добавляем путь к src для импортов
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
-from detoxbuddy.core.config import settings
+from detoxbuddy.core.config_simple import settings
 from detoxbuddy.telegram.bot.telegram_bot import TelegramBot
 from detoxbuddy.database.database import init_db
 
